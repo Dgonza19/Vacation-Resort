@@ -41,6 +41,7 @@ label {
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
-#bookingBtn {
-  text-align: center;
+#rooms {
+  width: 100px;
+  height: 80px;
 }
