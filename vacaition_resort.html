@@ -34,7 +34,7 @@
 <style>
   .box {
     width: 800px;
-    height: 550px;
+    height: 800px;
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 15px;
@@ -72,7 +72,7 @@
       <input class="form" type="email" id="inputEmail" placeholder="salem@email.com"><br>
 
       <label class="form">Check In Date: </label>
-      <input class="form" type="date" id="checkinDate"> &nbsp;
+      <input class="form" type="date" id="checkInDate"> &nbsp;
       <label class="form">Number of Nights: </label>
       <input class="form" type="number" id="numNights"><br>
 
@@ -87,6 +87,8 @@
       <input class="form" type="number" id="numChildren" style="width: 50px;">
       <br>
 
+      <h6 id="errorMessage" style="color: red;font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;"></h6>
+
       <div class="radio" style="text-align: center; padding-top: 30px;">
         <h6>Discounts: </h6>
         <input class="checkbox" type="radio" id="noneRadio" name="discountRadio"> none &nbsp;
@@ -97,10 +99,10 @@
       <input class="btn btn-lg" type="button" id="bookingBtn" value="Book" href="receiptpage.html"
         style="background-color: #707073; color: #000000; ">
 
-      <div class="container" style="border: 1px; border-color: #000; border-style: solid; width: 400px; height: 150px; margin-top: 20px; padding-top: 10px;">
-        <h6>Standard Room Cost: </h6>
-        <h6 id="outputBaseTotalCost"></h6>
-        <h6>Applied Discount: </h6>
+      <div class="container" style="border: 1px; border-color: #000; border-style: solid; width: 400px; height: 250px; margin-top: 20px; padding-top: 10px;">
+        <h6>Room Cost: </h6>
+        <h6 id="outputBaseRoomCost"></h6>
+        <h6>After Discount: </h6>
         <h6 id="outputDiscounts"></h6>
         <h6>Tax: </h6>
         <h6 id="outputTax"></h6>
