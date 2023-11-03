@@ -8,7 +8,7 @@ function init() {
 }
 
 function getRoomRate(checkInDate, roomType) {
-  checkInDate = document.getElementById("checkInDate");
+  
   const checkInMonth = new Date(checkInDate.value).getMonth + 1;
 
   let peakSeasonRate = 100.00;
@@ -38,6 +38,7 @@ function getRoomRate(checkInDate, roomType) {
 function bookingBtnClicked() {
   // Intake
   const inputName = document.getElementById('inputName');
+  const checkInDate = document.getElementById("checkInDate");
   const inputNumNights = document.getElementById("numNights");
   let numNights = Number(inputNumNights.value);
 
